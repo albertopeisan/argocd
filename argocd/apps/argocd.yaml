@@ -9,9 +9,8 @@ spec:
     repoURL: https://github.com/albertopeisan/argocd
     directory:
       recurse: true
-      jsonnet: {}
     targetRevision: main
-    path: /
+    path: argocd/
 
   destination:
     namespace: argocd
