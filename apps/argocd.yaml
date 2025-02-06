@@ -6,12 +6,11 @@ metadata:
 spec:
   project: argocd
   source:
-    repoURL: https://github.com/albertopeisan/argocd.git
+    repoURL: https://github.com/albertopeisan/argocd
+    path: argocd
     directory:
       recurse: true
     targetRevision: main
-    path: ./argocd
-
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc

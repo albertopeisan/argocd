@@ -6,7 +6,7 @@ metadata:
 spec:
   description: "Project for managing ArgoCD components."
   sourceRepos:
-    - '*'
+    - https://github.com/albertopeisan/argocd
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc
