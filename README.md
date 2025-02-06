@@ -15,3 +15,10 @@ kubectl apply -f ./projects/argocd.yaml
 ```bash
 kubectl apply -f ./apps/argocd.yaml
 ```
+
+Sync the argocd application in ArgoCD using the UI or CLI. Now ArgoCD is self-managed.
+
+
+## Create applications Application
+
+kubectl apply -f ./apps/applications.yaml
