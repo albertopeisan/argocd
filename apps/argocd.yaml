@@ -6,11 +6,11 @@ metadata:
 spec:
   project: argocd
   source:
-    repoURL: https://github.com/albertopeisan/argocd
+    repoURL: https://github.com/albertopeisan/argocd.git
     directory:
       recurse: true
     targetRevision: main
-    path: /argocd
+    path: ./argocd
 
   destination:
     namespace: argocd
