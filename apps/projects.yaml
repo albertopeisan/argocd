@@ -10,7 +10,7 @@ spec:
     directory:
       recurse: true
     targetRevision: main
-    path: projects/
+    path: /projects
 
   destination:
     namespace: argocd
