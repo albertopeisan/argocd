@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: default
+  namespace: argocd
+spec:
+  description: Default Argo CD Project that excludes all deployments
+  sourceRepos: []  # No allowed source repositories
+  destinations:    # No allowed destination clusters/namespaces
+    - namespace: ""
+      server: ""
+  clusterResourceWhitelist: []  # No cluster resources allowed
+  namespaceResourceBlacklist:   # Blacklist all namespace resources
+    - group: "*"
+      kind: "*"
+  namespaceResourceWhitelist: []  # No namespace resources allowed
