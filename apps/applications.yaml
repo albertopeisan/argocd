@@ -8,8 +8,6 @@ spec:
   syncPolicy:
     syncOptions:
       - ApplyOutOfSyncOnly=true
-      - Prune=true
-      - PruneLast=true
   source:
     repoURL: https://github.com/albertopeisan/argocd
     path: apps
