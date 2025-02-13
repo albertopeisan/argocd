@@ -11,7 +11,7 @@ spec:
       name: '{{name}}-guestbook-1'
       namespace: argocd
     spec:
-      project: default
+      project: allow
       source:
         repoURL: https://github.com/mabusaa/argocd-example-apps.git
         targetRevision: master
