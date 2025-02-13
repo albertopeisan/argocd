@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: apps
+  namespace: argocd
+spec:
+  project: argocd
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+  source:
+    repoURL: https://github.com/albertopeisan/argocd
+    path: app-sets
+    directory:
+      recurse: true
+    targetRevision: main
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
