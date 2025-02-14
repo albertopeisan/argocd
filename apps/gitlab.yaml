@@ -10,6 +10,10 @@ spec:
     chart: gitlab
     repoURL: https://charts.gitlab.io/
     targetRevision: v8.6.5
+    helm:
+      parameters:
+        - name: certmanager-issuer.email
+          value: me@example.com
   destination:
     namespace: gitlab
     server: https://kubernetes.default.svc
